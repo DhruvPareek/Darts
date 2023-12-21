@@ -1,0 +1,157 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #282c34; /* Same gray background */
+}
+
+.Add-ons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.full-board{
+  /* background-color: #282c34; */
+  display: flex;
+  justify-content: center; /* Center horizontally*/
+  align-items: center;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  position: fixed; /* Keeps the div in place even when scrolling */
+  top: 0;
+  left: 0;
+
+}
+
+.player-scores{
+  display: flex;
+  margin-top: -177px;
+}
+
+.add-score-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.grid-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* height: 100vh; Full height of the viewport */
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Adjust columns to fit the container */
+  grid-gap: 2px; /* Spacing between buttons */
+  padding: 1px;
+}
+
+.grid-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; /* Set height equal to the minimum width of the grid column */
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.grid-button:hover {
+  background-color: #45a049;
+}
+
+.bust-button{
+  background-color: #f44336;
+  border: 2px solid #000000;
+  font-size: 16px;
+  width: 80px;
+  height: 40px; /* Set height equal to the minimum width of the grid column */
+}
+
+.bust-button:hover {
+  background-color: #d73c31;
+}
+
+.Clear-button{
+  background-color: #cbcbcb;
+  border: 2px solid #000000;
+  font-size: 16px;
+  width: 80px;
+  height: 40px; /* Set height equal to the minimum width of the grid column */
+}
+
+.Clear-button:hover{
+  background-color: #b1b1b1;
+}
+
+.textbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.textbox {
+  border: 5px, #ddd;
+  border-style: solid;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 116px; /* Or any desired width */
+  color:#ddd;
+}
+
+.textbox:focus {
+  outline: none;
+}
+
+.detail-box {
+  border: 2px solid #ddd;
+  padding: 10px;
+  color:#ddd;
+  width: 100px; /* Or any desired width */
+  text-align: center;
+  font-size: 21px;
+}
+
+.temp-score-left {
+  border-right: 2px solid #ddd;
+  padding: 10px;
+  color:#ddd;
+  width: 100px; /* Or any desired width */
+  text-align: center;
+  font-size: 16px;
+  width: 102px; /* Or any desired width */
+}
+
+.temp-score-right {
+  border-left: 2px solid #ddd;
+  padding: 10px;
+  color:#ddd;
+  width: 100px; /* Or any desired width */
+  text-align: center;
+  font-size: 16px;
+}
+
+.enter-button {
+  border: 2px solid #000000;
+  width: 100px; /* Or any desired width */
+  height: 38px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #FFD700;
+}
+
+.enter-button:hover {
+  background-color: #dabc0d;
+}
