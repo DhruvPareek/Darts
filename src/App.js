@@ -25,7 +25,7 @@ function App() {
 
     useEffect(() => {
       setImageIndex(Math.floor((Math.random() * pics.length)));
-    }, [imageIndex, setImageIndex]);
+    }, [imageIndex, setImageIndex, pics.length]);
 
     useEffect(() => {
       if(scoreA ===0 || scoreB ===0 || scoreC ===0 || scoreD ===0){
